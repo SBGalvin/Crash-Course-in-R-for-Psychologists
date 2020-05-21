@@ -152,7 +152,7 @@ boxplot(formula = Measure ~ Group,              # Select Y and X variables
 # 02-3) Plot everything together --------
 # We can plot everything together in a neat panel plot
 
-#pdf("output/figures/Exercise_1_Panel_Plot.pdf") # for saving to a .pdf file
+#png("output/figs/Exercise_1_Panel_Plot.png") # for saving to a .png file
 # This sets the image parameters, 2 rows, 2 columns
 par(mfrow=c(2,2))               
 
@@ -249,7 +249,7 @@ mydata_total_summary$kurtosis   <- NULL
 
 # write summary as a csv file
 write.csv(mydata_total_summary,              # object to be written to file
-          'output/mydata_total_summary.csv') # file path for output file
+          'output/tables/mydata_total_summary.csv') # file path for output file
 
 
 # 04-2) T-test Assumptions ----------------------------------------
@@ -263,7 +263,7 @@ ShapiroWilksTest <- data.frame(
 
 # write output to file
 write.csv(ShapiroWilksTest,
-          'output/mydata_ShapiroWilksTest-results.csv')
+          'output/tables/mydata_ShapiroWilksTest-results.csv')
 
 
 # Homogeneity of variance
@@ -275,7 +275,7 @@ BartletTest <- data.frame(
 
 # write output to file
 write.csv(BartletTest,
-          'output/mydata_BartletTest-results.csv')
+          'output/tables/mydata_BartletTest-results.csv')
 
 # 04-3) T-test -----------------------------------------------------
 # T- test
@@ -292,7 +292,7 @@ t_test_summary <- data.frame(
 
 # write output to file
 write.csv(t_test_summary,
-          'output/mydata_t-test-results.csv')
+          'output/tables/mydata_t-test-results.csv')
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
