@@ -8,7 +8,7 @@ The crash course assumes basic training in statistical methods.
 This session is focused on getting to grips with R and Rstudio IDE.   
 
 **Objectives**:  
-  - Learn how to write readble code
+  - Learn how to write readable code
   - Introduce basic functions
   - Read a file
   - Perform a data summary 
